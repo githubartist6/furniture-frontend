@@ -1,0 +1,369 @@
+/* =================================
+   NOT FOUND PAGE
+================================= */
+
+.not-found-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    background: #f8f6f2;
+}
+
+
+/* =================================
+   CONTAINER
+================================= */
+
+.not-found-container {
+    width: 100%;
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =================================
+   ICON
+================================= */
+
+.not-found-icon {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 50%;
+
+    background: #fff4d6;
+    color: #b45309;
+
+    font-size: 28px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =================================
+   404 NUMBER
+================================= */
+
+.not-found-number {
+    color: #2b2118;
+
+    font-size: clamp(6rem,
+            18vw,
+            10rem);
+
+    font-weight: 800;
+
+    line-height: 0.9;
+
+    letter-spacing: -7px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =================================
+   CONTENT
+================================= */
+
+.not-found-content {
+    width: 100%;
+    max-width: 520px;
+}
+
+.not-found-content h1 {
+    margin: 0;
+
+    color: #2b2118;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+.not-found-content p {
+    margin: 12px auto 0;
+
+    max-width: 480px;
+
+    color: #777;
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+}
+
+
+/* =================================
+   BUTTONS
+================================= */
+
+.not-found-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 30px;
+}
+
+
+/* =================================
+   COMMON BUTTON
+================================= */
+
+.not-found-buttons button {
+    min-width: 145px;
+    height: 46px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 0 20px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 0.88rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.not-found-buttons button svg {
+    font-size: 14px;
+}
+
+
+/* =================================
+   HOME BUTTON
+================================= */
+
+.not-found-home-btn {
+    border: 1px solid #2b2118;
+
+    background: #2b2118;
+    color: #ffffff;
+}
+
+.not-found-home-btn:hover {
+    background: #4a382b;
+
+    border-color: #4a382b;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(43,
+            33,
+            24,
+            0.18);
+}
+
+
+/* =================================
+   BACK BUTTON
+================================= */
+
+.not-found-back-btn {
+    border: 1px solid #d8cec4;
+
+    background: #ffffff;
+    color: #2b2118;
+}
+
+.not-found-back-btn:hover {
+    background: #fffaf5;
+
+    border-color: #b8a99b;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px rgba(0,
+            0,
+            0,
+            0.06);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 768px) {
+
+    .not-found-page {
+        padding: 35px 18px;
+    }
+
+    .not-found-icon {
+        width: 68px;
+        height: 68px;
+
+        font-size: 25px;
+    }
+
+    .not-found-number {
+        font-size: clamp(5.5rem,
+                20vw,
+                8rem);
+
+        letter-spacing: -5px;
+    }
+
+    .not-found-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .not-found-content p {
+        font-size: 0.9rem;
+    }
+
+    .not-found-buttons {
+        margin-top: 27px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 576px) {
+
+    .not-found-page {
+        min-height: 100svh;
+
+        padding: 30px 15px;
+    }
+
+    .not-found-container {
+        max-width: 100%;
+    }
+
+    .not-found-icon {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 13px;
+
+        font-size: 22px;
+    }
+
+    .not-found-number {
+        font-size: clamp(5rem,
+                27vw,
+                7rem);
+
+        letter-spacing: -4px;
+
+        margin-bottom: 12px;
+    }
+
+    .not-found-content h1 {
+        font-size: 1.55rem;
+    }
+
+    .not-found-content p {
+        max-width: 330px;
+
+        margin-top: 9px;
+
+        font-size: 0.82rem;
+
+        line-height: 1.55;
+    }
+
+    .not-found-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-top: 24px;
+    }
+
+    .not-found-buttons button {
+        width: 100%;
+        max-width: 280px;
+
+        height: 44px;
+
+        font-size: 0.82rem;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 380px) {
+
+    .not-found-page {
+        padding: 25px 12px;
+    }
+
+    .not-found-icon {
+        width: 54px;
+        height: 54px;
+
+        font-size: 20px;
+    }
+
+    .not-found-number {
+        font-size: 4.7rem;
+
+        letter-spacing: -3px;
+    }
+
+    .not-found-content h1 {
+        font-size: 1.35rem;
+    }
+
+    .not-found-content p {
+        max-width: 280px;
+
+        font-size: 0.78rem;
+    }
+
+    .not-found-buttons button {
+        max-width: 250px;
+
+        height: 42px;
+
+        font-size: 0.78rem;
+    }
+}

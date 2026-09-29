@@ -1,0 +1,298 @@
+.admin-layout {
+  min-height: 100vh;
+
+  background: #f8fafc;
+}
+
+
+/* =========================
+   MAIN AREA
+========================= */
+
+.admin-main {
+  min-height: 100vh;
+
+  margin-left: 260px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.admin-topbar {
+  height: 82px;
+
+  padding: 0 30px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+
+.admin-topbar h2 {
+  margin: 0;
+
+  font-size: 21px;
+
+  color: #1f2937;
+}
+
+
+.admin-topbar span {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 13px;
+
+  color: #6b7280;
+}
+
+
+.admin-user-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+}
+
+
+.admin-user-info>svg {
+  width: 40px;
+  height: 40px;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  border-radius: 50%;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+}
+
+
+.admin-user-info strong {
+  display: block;
+
+  color: #1f2937;
+
+  font-size: 14px;
+}
+
+
+.admin-user-info span {
+  margin-top: 2px;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.admin-content {
+  padding: 28px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.admin-loading {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #f8fafc;
+
+  color: #4b5563;
+
+  font-size: 15px;
+}
+
+
+.admin-loading-spinner {
+  width: 38px;
+  height: 38px;
+
+  margin-bottom: 15px;
+
+  border: 4px solid #e5e7eb;
+
+  border-top-color: #b91c1c;
+
+  border-radius: 50%;
+
+  animation:
+    adminSpin 0.8s linear infinite;
+}
+
+
+.admin-loading p {
+  margin: 0;
+}
+
+
+@keyframes adminSpin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* =========================
+   MOBILE HEADER
+========================= */
+
+.admin-mobile-header {
+  display: none;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .admin-main {
+    margin-left: 245px;
+  }
+
+
+  .admin-content {
+    padding: 22px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .admin-main {
+    margin-left: 0;
+
+    width: 100%;
+  }
+
+
+  .admin-topbar {
+    display: none;
+  }
+
+
+  .admin-mobile-header {
+    height: 64px;
+
+    padding: 0 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 900;
+  }
+
+
+  .admin-mobile-menu {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+
+    font-size: 18px;
+
+    cursor: pointer;
+  }
+
+
+  .admin-mobile-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #1f2937;
+
+    font-size: 17px;
+
+    font-weight: 700;
+  }
+
+
+  .admin-mobile-title svg {
+    color: #b91c1c;
+  }
+
+
+  .admin-content {
+    padding: 18px 15px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .admin-content {
+    padding: 15px 12px;
+  }
+
+}

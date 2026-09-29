@@ -1,0 +1,767 @@
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.furniture-signup-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #f5f1ec; */
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.furniture-signup-container {
+    width: 100%;
+    max-width: 1150px;
+
+    min-height: 700px;
+
+    display: grid;
+    grid-template-columns: 48% 52%;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 25px 70px rgba(55, 40, 30, 0.15);
+}
+
+
+/* =========================================
+   LEFT SECTION
+========================================= */
+
+.furniture-signup-left {
+    min-height: 700px;
+
+    padding: 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(rgba(48, 35, 26, 0.84),
+            rgba(48, 35, 26, 0.94)),
+        url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.signup-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.signup-logo {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 13px;
+
+    background: #b88a5a;
+
+    color: #ffffff;
+
+    font-size: 24px;
+}
+
+.signup-brand h2 {
+    margin: 0;
+
+    font-size: 22px;
+
+    letter-spacing: 3px;
+}
+
+.signup-brand span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #d8c3ae;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   WELCOME CONTENT
+========================================= */
+
+.signup-welcome {
+    width: 100%;
+    max-width: 430px;
+}
+
+.signup-small-title {
+    color: #c69b6b;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.signup-welcome h1 {
+    margin: 18px 0;
+
+    font-size: clamp(38px, 4vw, 54px);
+
+    line-height: 1.08;
+
+    font-weight: 600;
+}
+
+.signup-welcome h1 span {
+    color: #d3aa79;
+}
+
+.signup-welcome p {
+    max-width: 390px;
+
+    margin: 0;
+
+    color: #ddd2c7;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   LEFT FOOTER
+========================================= */
+
+.signup-left-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    color: #d7c8ba;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+.signup-left-footer span:nth-child(2) {
+    color: #c69b6b;
+}
+
+
+/* =========================================
+   RIGHT SECTION
+========================================= */
+
+.furniture-signup-right {
+    width: 100%;
+
+    padding: 50px 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+.signup-card {
+    width: 100%;
+    max-width: 410px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.signup-heading {
+    margin-bottom: 27px;
+}
+
+.signup-heading h2 {
+    margin: 0;
+
+    color: #2d211a;
+
+    font-size: 31px;
+
+    font-weight: 600;
+}
+
+.signup-heading p {
+    margin: 8px 0 0;
+
+    color: #94877c;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.signup-form-group {
+    width: 100%;
+
+    margin-bottom: 17px;
+}
+
+.signup-form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #3f3025;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.signup-input {
+    width: 100%;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #ded6cf;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    transition: 0.25s ease;
+}
+
+.signup-input:focus-within {
+    border-color: #b18459;
+
+    box-shadow:
+        0 0 0 4px rgba(177, 132, 89, 0.10);
+}
+
+.signup-input-icon {
+    margin-left: 16px;
+
+    flex-shrink: 0;
+
+    color: #9d8e82;
+
+    font-size: 14px;
+}
+
+.signup-input input {
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+
+    padding: 0 14px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #34271f;
+
+    font-size: 14px;
+}
+
+.signup-input input::placeholder {
+    color: #b2a69d;
+}
+
+
+/* =========================================
+   PASSWORD EYE
+========================================= */
+
+.signup-eye-btn {
+    width: 50px;
+    height: 100%;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #9b8c80;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.signup-eye-btn:hover {
+    color: #9b7048;
+}
+
+
+/* =========================================
+   TERMS
+========================================= */
+
+.signup-terms {
+    margin-top: 5px;
+
+    margin-bottom: 22px;
+}
+
+.signup-terms label {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    color: #766a61;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+.signup-terms input {
+    width: 15px;
+    height: 15px;
+
+    margin-top: 1px;
+
+    flex-shrink: 0;
+
+    accent-color: #9b7048;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SIGNUP BUTTON
+========================================= */
+
+.signup-button {
+    width: 100%;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #34251c;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(52, 37, 28, 0.18);
+
+    transition: 0.25s ease;
+}
+
+.signup-button:hover {
+    background: #9b7048;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(155, 112, 72, 0.25);
+}
+
+.signup-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   LOGIN LINK
+========================================= */
+
+.login-link-section {
+    margin-top: 24px;
+
+    text-align: center;
+
+    color: #958a81;
+
+    font-size: 13px;
+}
+
+.login-link-section a {
+    margin-left: 5px;
+
+    color: #9b7048;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.login-link-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE LOGO
+========================================= */
+
+.mobile-signup-logo {
+    display: none;
+}
+
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .furniture-signup-page {
+        padding: 25px;
+    }
+
+    .furniture-signup-container {
+        grid-template-columns: 44% 56%;
+    }
+
+    .furniture-signup-left {
+        padding: 45px;
+    }
+
+    .furniture-signup-right {
+        padding: 45px;
+    }
+
+    .signup-welcome h1 {
+        font-size: 42px;
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+    .furniture-signup-container {
+        grid-template-columns: 40% 60%;
+    }
+
+    .furniture-signup-left {
+        padding: 35px;
+    }
+
+    .furniture-signup-right {
+        padding: 35px;
+    }
+
+    .signup-brand h2 {
+        font-size: 18px;
+    }
+
+    .signup-welcome h1 {
+        font-size: 35px;
+    }
+
+    .signup-welcome p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .furniture-signup-page {
+        min-height: 100vh;
+
+        padding: 15px;
+
+        align-items: center;
+    }
+
+
+    /* Container */
+
+    .furniture-signup-container {
+        width: 100%;
+
+        display: block;
+
+        min-height: auto;
+
+        border-radius: 18px;
+
+        box-shadow:
+            0 15px 45px rgba(55, 40, 30, 0.12);
+    }
+
+
+    /* Hide Left */
+
+    .furniture-signup-left {
+        display: none;
+    }
+
+
+    /* Right */
+
+    .furniture-signup-right {
+        width: 100%;
+
+        padding: 32px 25px;
+    }
+
+    .signup-card {
+        max-width: 100%;
+    }
+
+
+    /* Mobile Logo */
+
+    .mobile-signup-logo {
+        display: flex;
+
+        justify-content: center;
+
+        margin-bottom: 20px;
+    }
+
+    .mobile-signup-logo .signup-logo {
+        width: 58px;
+        height: 58px;
+
+        background: #34251c;
+
+        font-size: 25px;
+
+        box-shadow:
+            0 8px 20px rgba(52, 37, 28, 0.18);
+    }
+
+
+    /* Heading */
+
+    .signup-heading {
+        margin-bottom: 25px;
+
+        text-align: center;
+    }
+
+    .signup-heading h2 {
+        font-size: 26px;
+    }
+
+    .signup-heading p {
+        font-size: 13px;
+    }
+
+
+    /* Inputs */
+
+    .signup-input {
+        height: 52px;
+    }
+
+    .signup-form-group {
+        margin-bottom: 18px;
+    }
+
+
+    /* Button */
+
+    .signup-button {
+        height: 53px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .furniture-signup-page {
+        padding: 10px;
+    }
+
+    .furniture-signup-right {
+        padding: 28px 20px;
+    }
+
+    .signup-heading h2 {
+        font-size: 24px;
+    }
+
+    .signup-heading p {
+        font-size: 12px;
+    }
+
+    .signup-form-group {
+        margin-bottom: 16px;
+    }
+
+    .signup-input {
+        height: 50px;
+    }
+
+    .signup-button {
+        height: 51px;
+
+        font-size: 11px;
+    }
+
+    .login-link-section {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width: 350px) {
+
+    .furniture-signup-right {
+        padding: 25px 15px;
+    }
+
+    .mobile-signup-logo {
+        margin-bottom: 15px;
+    }
+
+    .mobile-signup-logo .signup-logo {
+        width: 48px;
+        height: 48px;
+
+        font-size: 20px;
+    }
+
+    .signup-heading {
+        margin-bottom: 20px;
+    }
+
+    .signup-heading h2 {
+        font-size: 21px;
+    }
+
+    .signup-input {
+        height: 48px;
+    }
+
+    .signup-button {
+        height: 49px;
+    }
+}
+
+
+/* =========================================
+   LANDSCAPE MOBILE
+========================================= */
+
+@media (max-height: 600px) and (max-width: 700px) {
+
+    .furniture-signup-page {
+        align-items: flex-start;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .mobile-signup-logo {
+        margin-bottom: 10px;
+    }
+
+    .mobile-signup-logo .signup-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .signup-heading {
+        margin-bottom: 15px;
+    }
+
+    .signup-form-group {
+        margin-bottom: 12px;
+    }
+
+    .signup-input {
+        height: 47px;
+    }
+
+    .signup-button {
+        height: 48px;
+    }
+}

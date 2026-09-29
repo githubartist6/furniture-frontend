@@ -1,0 +1,572 @@
+/* ================================
+   SOFAS SECTION
+================================ */
+
+.beds,
+.sofas {
+    width: 100%;
+    padding: 80px 20px;
+    margin-top: 50px;
+    background: #f8f6f2;
+    box-sizing: border-box;
+}
+
+.beds-container,
+.sofas-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.beds-heading,
+.sofas-heading {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.beds-heading span,
+.sofas-heading span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #b45309;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.beds-heading h2,
+.sofas-heading h2 {
+    margin: 0;
+    color: #222222;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.beds-heading p,
+.sofas-heading p {
+    max-width: 600px;
+    margin: 15px auto 0;
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   TOOLBAR
+================================ */
+
+.beds-toolbar,
+.sofas-toolbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+}
+
+
+/* ================================
+   SOFA COUNT
+================================ */
+
+.beds-count,
+.sofas-count {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.beds-count strong,
+.sofas-count strong {
+    color: #b45309;
+    font-size: 16px;
+}
+
+.beds-count span,
+.sofas-count span {
+    color: #666666;
+    font-size: 13px;
+}
+
+
+/* ================================
+   SORT
+================================ */
+
+.beds-sort,
+.sofas-sort {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.beds-sort>svg,
+.sofas-sort>svg {
+    color: #b45309;
+    font-size: 14px;
+}
+
+.beds-sort label,
+.sofas-sort label {
+    color: #555555;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.beds-sort select,
+.sofas-sort select {
+    height: 38px;
+    padding: 0 35px 0 12px;
+    color: #333333;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.beds-sort select:focus,
+.sofas-sort select:focus {
+    border-color: #b45309;
+}
+
+
+/* ================================
+   SOFA GRID
+================================ */
+
+.beds-grid,
+.sofas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+/* ================================
+   SOFA CARD
+================================ */
+
+.bed-card,
+.sofa-card {
+    display: block;
+    overflow: hidden;
+    color: inherit;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.bed-card:hover,
+.sofa-card:hover {
+    transform: translateY(-7px);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================================
+   IMAGE
+================================ */
+
+.bed-image,
+.sofa-image {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+.bed-image img,
+.sofa-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.bed-card:hover .bed-image img,
+.sofa-card:hover .sofa-image img {
+    transform: scale(1.07);
+}
+
+
+/* ================================
+   VIEW PRODUCT
+================================ */
+
+.bed-view,
+.sofa-view {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 9px 12px;
+    color: #ffffff;
+    background: #b45309;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translate(-50%, 15px);
+    transition: all 0.3s ease;
+}
+
+.bed-card:hover .bed-view,
+.sofa-card:hover .sofa-view {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.bed-view svg,
+.sofa-view svg {
+    font-size: 9px;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.bed-content,
+.sofa-content {
+    padding: 20px;
+}
+
+.bed-category,
+.sofa-category {
+    display: block;
+    margin-bottom: 8px;
+    color: #b45309;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.bed-content h3,
+.sofa-content h3 {
+    margin: 0;
+    min-height: 52px;
+    color: #222222;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+
+/* ================================
+   PRICE
+================================ */
+
+.bed-price,
+.sofa-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.bed-price strong,
+.sofa-price strong {
+    color: #b45309;
+    font-size: 21px;
+}
+
+.bed-price del,
+.sofa-price del {
+    color: #999999;
+    font-size: 14px;
+}
+
+
+/* ================================
+   NO SOFAS
+================================ */
+
+.no-beds,
+.no-sofas {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+}
+
+.no-beds h3,
+.no-sofas h3 {
+    margin: 0 0 8px;
+    color: #222222;
+    font-size: 22px;
+}
+
+.no-beds p,
+.no-sofas p {
+    margin: 0;
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* ================================
+   1100px
+================================ */
+
+@media (max-width: 1100px) {
+
+    .beds,
+    .sofas {
+        padding: 65px 20px;
+    }
+
+    .beds-grid,
+    .sofas-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .bed-image,
+    .sofa-image {
+        height: 250px;
+    }
+
+    .bed-content,
+    .sofa-content {
+        padding: 18px;
+    }
+
+    .bed-content h3,
+    .sofa-content h3 {
+        font-size: 17px;
+    }
+
+    .bed-price strong,
+    .sofa-price strong {
+        font-size: 19px;
+    }
+
+    .bed-price del,
+    .sofa-price del {
+        font-size: 13px;
+    }
+}
+
+
+/* ================================
+   800px
+================================ */
+
+@media (max-width: 800px) {
+
+    .beds,
+    .sofas {
+        padding: 55px 18px;
+    }
+
+    .beds-heading,
+    .sofas-heading {
+        margin-bottom: 35px;
+    }
+
+    .beds-heading h2,
+    .sofas-heading h2 {
+        font-size: 36px;
+    }
+
+    .beds-grid,
+    .sofas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .bed-image,
+    .sofa-image {
+        height: 260px;
+    }
+
+    .bed-view,
+    .sofa-view {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    .bed-content h3,
+    .sofa-content h3 {
+        font-size: 18px;
+    }
+}
+
+
+/* ================================
+   600px
+================================ */
+
+@media (max-width: 600px) {
+
+    .beds,
+    .sofas {
+        padding: 45px 15px;
+    }
+
+    .beds-heading,
+    .sofas-heading {
+        margin-bottom: 30px;
+    }
+
+    .beds-heading span,
+    .sofas-heading span {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .beds-heading h2,
+    .sofas-heading h2 {
+        font-size: 31px;
+    }
+
+    .beds-heading p,
+    .sofas-heading p {
+        font-size: 14px;
+    }
+
+
+    /* Toolbar */
+
+    .beds-toolbar,
+    .sofas-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+        padding: 13px;
+    }
+
+    .beds-count,
+    .sofas-count {
+        justify-content: center;
+    }
+
+    .beds-sort,
+    .sofas-sort {
+        justify-content: center;
+    }
+
+    .beds-sort select,
+    .sofas-sort select {
+        flex: 1;
+        max-width: 250px;
+    }
+
+
+    /* Products */
+
+    .beds-grid,
+    .sofas-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .bed-image,
+    .sofa-image {
+        height: 300px;
+    }
+
+    .bed-content,
+    .sofa-content {
+        padding: 18px;
+    }
+
+    .bed-content h3,
+    .sofa-content h3 {
+        min-height: auto;
+        font-size: 19px;
+    }
+
+    .bed-price strong,
+    .sofa-price strong {
+        font-size: 21px;
+    }
+
+    .bed-price del,
+    .sofa-price del {
+        font-size: 14px;
+    }
+}
+
+
+/* ================================
+   400px
+================================ */
+
+@media (max-width: 400px) {
+
+    .beds,
+    .sofas {
+        padding: 35px 12px;
+    }
+
+    .beds-heading h2,
+    .sofas-heading h2 {
+        font-size: 27px;
+    }
+
+    .beds-heading p,
+    .sofas-heading p {
+        font-size: 13px;
+    }
+
+    .beds-sort label,
+    .sofas-sort label {
+        font-size: 12px;
+    }
+
+    .beds-sort select,
+    .sofas-sort select {
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .bed-image,
+    .sofa-image {
+        height: 240px;
+    }
+
+    .bed-content,
+    .sofa-content {
+        padding: 15px;
+    }
+
+    .bed-content h3,
+    .sofa-content h3 {
+        font-size: 17px;
+    }
+
+    .bed-price strong,
+    .sofa-price strong {
+        font-size: 19px;
+    }
+}

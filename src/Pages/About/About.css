@@ -1,0 +1,1219 @@
+/* ==================================================
+   ABOUT PAGE
+================================================== */
+
+.about-page {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #f7f5f1;
+
+    color: #1b1b1b;
+}
+
+
+/* ==================================================
+   ABOUT HERO
+================================================== */
+
+.about-hero {
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image:
+        url("/funicher.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+}
+
+
+.about-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, 0.88) 0%,
+            rgba(0, 0, 0, 0.70) 45%,
+            rgba(0, 0, 0, 0.25) 100%);
+}
+
+
+.about-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 70px 55px;
+
+    color: #fff;
+}
+
+
+.about-small-title {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #d8aa62;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.about-hero-content h1 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(45px,
+            6vw,
+            78px);
+
+    font-weight: 500;
+
+    line-height: 1.03;
+
+}
+
+
+.about-hero-content h1 span {
+    color: #dfb26b;
+}
+
+
+.about-hero-content p {
+    max-width: 560px;
+
+    margin-top: 22px;
+
+    color: rgba(255,
+            255,
+            255,
+            0.78);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   INTRODUCTION
+================================================== */
+
+.about-introduction {
+    padding:
+        85px 40px;
+}
+
+
+.about-intro-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: #b18a51;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+.about-intro-left h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 45px;
+
+    font-weight: 500;
+
+    line-height: 1.1;
+}
+
+
+.about-intro-left h2 span {
+    color: #b18a51;
+}
+
+
+.about-intro-right p {
+    margin:
+        0 0 16px;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+.location-box {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-top: 10px;
+
+    padding:
+        13px 18px;
+
+    background: #fff;
+
+    border-left:
+        3px solid #b18a51;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.location-box>svg {
+    color: #b18a51;
+
+    font-size: 18px;
+}
+
+
+.location-box div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.location-box strong {
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+.location-box span {
+    color: #888;
+
+    font-size: 9px;
+}
+
+
+/* ==================================================
+   TREE SECTION
+================================================== */
+
+.company-tree-section {
+    padding:
+        90px 35px 100px;
+
+    background: #111;
+}
+
+
+.tree-heading {
+    max-width: 700px;
+
+    margin:
+        0 auto 65px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+
+.tree-heading h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 42px;
+
+    font-weight: 500;
+}
+
+
+.tree-heading h2 span {
+    color: #d9a961;
+}
+
+
+.tree-heading p {
+    max-width: 550px;
+
+    margin:
+        15px auto 0;
+
+    color: rgba(255,
+            255,
+            255,
+            0.55);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   TREE
+================================================== */
+
+.company-tree {
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+
+/* ==================================================
+   PARTNER COMPANIES
+================================================== */
+
+.partner-companies {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    position: relative;
+}
+
+
+.company-card {
+    position: relative;
+
+    min-height: 245px;
+
+    padding:
+        25px 20px;
+
+    background:
+        linear-gradient(145deg,
+            #202020,
+            #151515);
+
+    border:
+        1px solid rgba(255,
+            255,
+            255,
+            0.10);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.company-card:hover {
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(214,
+            169,
+            96,
+            0.7);
+}
+
+
+/* ICON */
+
+.company-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #d5a45d;
+
+    border:
+        1px solid rgba(213,
+            164,
+            93,
+            0.45);
+
+    margin-bottom: 15px;
+}
+
+
+.company-icon svg {
+    font-size: 17px;
+}
+
+
+/* NUMBER */
+
+.company-number {
+    position: absolute;
+
+    top: 22px;
+
+    right: 20px;
+
+    color: rgba(255,
+            255,
+            255,
+            0.18);
+
+    font-size: 25px;
+
+    font-family: Georgia, serif;
+}
+
+
+.company-card h3 {
+    margin:
+        0 0 7px;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+.company-card strong {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #d5a45d;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.company-card p {
+    margin: 0;
+
+    color: rgba(255,
+            255,
+            255,
+            0.50);
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   TREE CONNECTOR
+================================================== */
+
+.tree-connector {
+    position: relative;
+
+    height: 75px;
+
+    margin:
+        0 12.5%;
+}
+
+
+.horizontal-line {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background:
+        rgba(213,
+            164,
+            93,
+            0.55);
+}
+
+
+.vertical-line {
+    position: absolute;
+
+    top: 0;
+
+    left: 50%;
+
+    width: 1px;
+
+    height: 75px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        #d5a45d;
+}
+
+
+.connector-arrow {
+    position: absolute;
+
+    bottom: -1px;
+
+    left: 50%;
+
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transform:
+        translateX(-50%);
+
+    color: #111;
+
+    background: #d5a45d;
+
+    border-radius: 50%;
+}
+
+
+.connector-arrow svg {
+    font-size: 9px;
+}
+
+
+/* ==================================================
+   MAIN COMPANY
+================================================== */
+
+.main-company {
+    max-width: 600px;
+
+    min-height: 170px;
+
+    margin: auto;
+
+    padding:
+        28px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background:
+        linear-gradient(135deg,
+            #292929,
+            #171717);
+
+    border:
+        1px solid rgba(213,
+            164,
+            93,
+            0.65);
+
+    box-shadow:
+        0 15px 45px rgba(0,
+            0,
+            0,
+            0.35);
+}
+
+
+.main-company-icon {
+    flex-shrink: 0;
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #111;
+
+    background: #d5a45d;
+
+    border-radius: 50%;
+}
+
+
+.main-company-icon svg {
+    font-size: 25px;
+}
+
+
+.main-company-content>span {
+    color: #d5a45d;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.main-company-content h3 {
+    margin:
+        5px 0 7px;
+
+    color: #fff;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+}
+
+
+.main-company-content p {
+    max-width: 430px;
+
+    margin: 0;
+
+    color: rgba(255,
+            255,
+            255,
+            0.55);
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+.main-company-location {
+    margin-top: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #d5a45d;
+
+    font-size: 9px;
+}
+
+
+.main-company-location svg {
+    font-size: 9px;
+}
+
+
+/* ==================================================
+   BOTTOM CONNECTOR
+================================================== */
+
+.bottom-connector {
+    width: 1px;
+
+    height: 55px;
+
+    margin: auto;
+
+    background: #d5a45d;
+}
+
+
+.bottom-connector div {
+    width: 10px;
+    height: 10px;
+
+    position: relative;
+
+    left: -4px;
+
+    top: 48px;
+
+    background: #d5a45d;
+
+    border-radius: 50%;
+}
+
+
+/* ==================================================
+   OPERATIONS
+================================================== */
+
+.operations-card {
+    max-width: 500px;
+
+    margin: auto;
+
+    padding:
+        20px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    background: #f4f0e9;
+
+    color: #222;
+
+    border-left:
+        4px solid #d5a45d;
+}
+
+
+.operations-icon {
+    flex-shrink: 0;
+
+    color: #b18a51;
+
+    font-size: 27px;
+}
+
+
+.operations-card span {
+    color: #b18a51;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.operations-card h3 {
+    margin:
+        5px 0;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+
+.operations-card p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+/* ==================================================
+   VALUES
+================================================== */
+
+.about-values {
+    padding:
+        85px 35px;
+
+    background: #f7f5f1;
+}
+
+
+.values-container {
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.values-heading {
+    margin-bottom: 40px;
+}
+
+
+.values-heading h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size: 40px;
+
+    font-weight: 500;
+}
+
+
+.values-heading h2 span {
+    color: #b18a51;
+}
+
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.value-card {
+    padding:
+        28px 22px;
+
+    background: #fff;
+
+    border:
+        1px solid #e8e4dd;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.value-card:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0,
+            0,
+            0,
+            0.07);
+}
+
+
+.value-card>span {
+    color: #b18a51;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+}
+
+
+.value-card h3 {
+    margin:
+        15px 0 8px;
+
+    font-size: 14px;
+
+    letter-spacing: 0.5px;
+}
+
+
+.value-card p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+}
+
+
+/* ==================================================
+   LARGE TABLET
+================================================== */
+
+@media (max-width: 1050px) {
+
+    .about-intro-container {
+        gap: 50px;
+    }
+
+
+    .partner-companies {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .tree-connector {
+        margin:
+            0 25%;
+    }
+
+
+    .values-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        min-height: 420px;
+    }
+
+
+    .about-hero-content {
+        padding:
+            60px 35px;
+    }
+
+
+    .about-hero-content h1 {
+        font-size: 48px;
+    }
+
+
+    .about-introduction {
+        padding:
+            65px 25px;
+    }
+
+
+    .about-intro-container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .about-intro-left h2 {
+        font-size: 38px;
+    }
+
+
+    .company-tree-section {
+        padding:
+            70px 20px 80px;
+    }
+
+
+    .tree-heading h2 {
+        font-size: 35px;
+    }
+
+
+    .partner-companies {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+
+    .company-card {
+        min-height: 230px;
+    }
+
+
+    .tree-connector {
+        margin:
+            0 20%;
+    }
+
+
+    .values-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 400px;
+
+        background-position:
+            60% center;
+    }
+
+
+    .about-hero-content {
+        padding:
+            50px 25px;
+    }
+
+
+    .about-small-title {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .about-hero-content h1 {
+        font-size: 40px;
+    }
+
+
+    .about-hero-content p {
+        font-size: 11px;
+    }
+
+
+    .about-introduction {
+        padding:
+            55px 20px;
+    }
+
+
+    .about-intro-left h2 {
+        font-size: 34px;
+    }
+
+
+    .about-intro-right p {
+        font-size: 12px;
+    }
+
+
+    /* TREE */
+
+    .company-tree-section {
+        padding:
+            60px 15px 70px;
+    }
+
+
+    .tree-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .tree-heading h2 {
+        font-size: 30px;
+    }
+
+
+    .tree-heading p {
+        font-size: 11px;
+    }
+
+
+    /* ONE COLUMN */
+
+    .partner-companies {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .company-card {
+        min-height: auto;
+
+        padding:
+            22px 18px;
+    }
+
+
+    /* MOBILE CONNECTOR */
+
+    .tree-connector {
+        height: 45px;
+
+        margin: 0;
+    }
+
+
+    .horizontal-line {
+        display: none;
+    }
+
+
+    .vertical-line {
+        height: 45px;
+    }
+
+
+    .connector-arrow {
+        bottom: -1px;
+    }
+
+
+    /* MAIN COMPANY */
+
+    .main-company {
+        padding:
+            23px 18px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+
+    .main-company-content p {
+        font-size: 10px;
+    }
+
+
+    .main-company-location {
+        justify-content: center;
+    }
+
+
+    .bottom-connector {
+        height: 40px;
+    }
+
+
+    .bottom-connector div {
+        top: 33px;
+    }
+
+
+    /* OPERATIONS */
+
+    .operations-card {
+        padding:
+            18px 15px;
+
+        gap: 12px;
+    }
+
+
+    .operations-card h3 {
+        font-size: 15px;
+    }
+
+
+    /* VALUES */
+
+    .about-values {
+        padding:
+            60px 20px;
+    }
+
+
+    .values-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .values-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 400px) {
+
+    .about-hero-content h1 {
+        font-size: 35px;
+    }
+
+
+    .about-intro-left h2 {
+        font-size: 30px;
+    }
+
+
+    .tree-heading h2 {
+        font-size: 27px;
+    }
+
+
+    .main-company-content h3 {
+        font-size: 23px;
+    }
+
+
+    .operations-card h3 {
+        font-size: 14px;
+    }
+
+}
