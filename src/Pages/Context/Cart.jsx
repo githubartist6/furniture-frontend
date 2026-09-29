@@ -260,15 +260,6 @@ const Cart = () => {
         // CHECK COMPLETE ADDRESS
         // ========================================
 
-        /*
-          User model:
-          address: [addressSchema]
-
-          So we must use the first saved
-          address instead of treating address
-          as a single object.
-        */
-
         const savedAddresses =
           Array.isArray(
             addressData?.address

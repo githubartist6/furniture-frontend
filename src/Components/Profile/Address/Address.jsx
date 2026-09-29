@@ -69,18 +69,17 @@ const addressToForm = (address) => {
     }
 
     return {
-        name: address.name || "",
+        // Prefer canonical MongoDB fields; fall back to legacy names.
+        name: address.fullName || address.name || "",
         phone: address.phone || "",
         pincode: address.pincode || "",
         location: address.location || "",
-        address: address.address || "",
+        address: address.addressLine1 || address.address || "",
         city: address.city || "",
         state: address.state || "",
         landmark: address.landmark || "",
-        alternatePhone:
-            address.alternatePhone || "",
-        addressType:
-            address.addressType || "Home",
+        alternatePhone: address.alternatePhone || "",
+        addressType: address.addressType || "Home",
     };
 };
 
@@ -1163,9 +1162,9 @@ const Address = () => {
 
                                 <label
                                     className={`address-type-option ${formData.addressType ===
-                                            "Home"
-                                            ? "selected"
-                                            : ""
+                                        "Home"
+                                        ? "selected"
+                                        : ""
                                         }`}
                                 >
 
@@ -1198,9 +1197,9 @@ const Address = () => {
 
                                 <label
                                     className={`address-type-option ${formData.addressType ===
-                                            "Work"
-                                            ? "selected"
-                                            : ""
+                                        "Work"
+                                        ? "selected"
+                                        : ""
                                         }`}
                                 >
 
@@ -1233,9 +1232,9 @@ const Address = () => {
 
                                 <label
                                     className={`address-type-option ${formData.addressType ===
-                                            "Other"
-                                            ? "selected"
-                                            : ""
+                                        "Other"
+                                        ? "selected"
+                                        : ""
                                         }`}
                                 >
 
@@ -1496,7 +1495,7 @@ const Address = () => {
                                 <FaUser />
 
                                 <strong>
-                                    {address.name}
+                                    {address.fullName || address.name}
                                 </strong>
 
                             </div>
@@ -1534,10 +1533,11 @@ const Address = () => {
                                 <div>
 
                                     <p>
-                                        {
-                                            address.address
-                                        }
+                                        {address.addressLine1 || address.address}
                                     </p>
+                                    {address.addressLine2 && (
+                                        <p>{address.addressLine2}</p>
+                                    )}
 
                                     <p>
                                         {
